@@ -1,12 +1,14 @@
 import { useContext } from "react";
-import { DataContext } from "../context/dataContext";
+import { DataContext } from "../../context/dataContext";
+
 const CategoryNav = () => {
-  const { categoryList } = useContext(DataContext);
+  const { category } = useContext(DataContext);
+
   return (
     <ul>
-      {categoryList.map((category, index) => {
-        return <li key={index}>{category}</li>;
-      })}
+      {category.map((category, index) => (
+        <li key={index}>{category}</li>
+      ))}
     </ul>
   );
 };

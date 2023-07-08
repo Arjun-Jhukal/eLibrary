@@ -12,7 +12,8 @@ li,
 p,
 span,
 strong,
-em {
+em,
+div {
   font-size: 1.6rem;
 }
 
@@ -27,6 +28,7 @@ h4,
 h5 {
   font-family: $fontFamily_01;
   font-weight: 600;
+  margin-bottom: 0.5em;
 }
 ul,
 li {
@@ -46,7 +48,7 @@ textarea {
 button {
   outline: none;
   border: none;
-  background-color: transparent;
+  // background-color: transparent;
 }
 img {
   width: 100%;

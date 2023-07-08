@@ -1,10 +1,9 @@
-import React from "react";
-
+import { Link } from "react-router-dom";
 const NavItem = () => {
   return (
-    <div>
-      <p>NavItem</p>
-    </div>
+    <li>
+      <Link to={"/"}>Home</Link>
+    </li>
   );
 };
 

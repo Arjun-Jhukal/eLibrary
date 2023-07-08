@@ -1,0 +1,41 @@
+.lg__heading {
+  font-size: $lg_font;
+}
+.md__heading {
+  font-size: $md_font;
+}
+.sm__heading {
+  font-size: $sm_font;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 1.6rem;
+  border-radius: 2px;
+  color: $white !important;
+  position: relative;
+  z-index: 1;
+
+  &__free,
+  &__paid {
+    background-color: $lightOrange;
+    overflow: hidden;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 0%;
+      background-color: $orange;
+      @include transition(0.4s);
+      z-index: -1;
+    }
+    &:hover {
+      &::before {
+        width: 100%;
+      }
+    }
+  }
+}

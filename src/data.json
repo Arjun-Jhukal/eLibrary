@@ -1,75 +1,145 @@
 {
-  "category": ["Friction", "Non-Friction", "Business", "Self-help", "Biography"],
+  "category": ["Friction", "Non-Friction", "Business", "Self-help", "Biography", "Academic", "Poetry", "Philosophy", "Crime"],
   "books": [
     {
       "title": "The Great Gatsby",
       "author": "F. Scott Fitzgerald",
       "category": "Fiction",
       "status": "free",
-      "image": "./assets/img/books/01.jpg"
+      "image": "./src/assets/img/books/01.jpg"
     },
     {
       "title": "To Kill a Mockingbird",
       "author": "Harper Lee",
       "category": "Fiction",
       "status": "free",
-      "image": "./assets/img/books/02.jpg"
+      "image": "./src/assets/img/books/02.jpg"
     },
     {
       "title": "1984",
       "author": "George Orwell",
       "category": "Fiction",
-      "status": "free",
-      "image": "./assets/img/books/03.jpg"
+      "status": "premium",
+      "image": "./src/assets/img/books/03.jpg"
     },
     {
       "title": "Pride and Prejudice",
       "author": "Jane Austen",
       "category": "Fiction",
       "status": "free",
-      "image": "./assets/img/books/04.jpg"
+      "image": "./src/assets/img/books/04.jpg"
     },
     {
       "title": "Sapiens: A Brief History of Humankind",
       "author": "Yuval Noah Harari",
       "category": "Non-fiction",
       "status": "free",
-      "image": "./assets/img/books/05.jpg"
+      "image": "./src/assets/img/books/05.jpg"
     },
     {
       "title": "The Power of Now",
       "author": "Eckhart Tolle",
       "category": "Non-fiction",
-      "status": "free",
-      "image": "./assets/img/books/06.jpg"
+      "status": "premium",
+      "image": "./src/assets/img/books/06.jpg"
     },
     {
       "title": "Thinking, Fast and Slow",
       "author": "Daniel Kahneman",
       "category": "Non-fiction",
       "status": "free",
-      "image": "./assets/img/books/07.jpg"
+      "image": "./src/assets/img/books/07.jpg"
     },
     {
       "title": "The Lean Startup",
       "author": "Eric Ries",
       "category": "Business",
       "status": "free",
-      "image": "./assets/img/books/08.jpg"
+      "image": "./src/assets/img/books/08.jpg"
     },
     {
       "title": "The Art of War",
       "author": "Sun Tzu",
       "category": "Business",
       "status": "free",
-      "image": "./assets/img/books/09.jpg"
+      "image": "./src/assets/img/books/09.jpg"
     },
     {
       "title": "The Subtle Art of Not Giving a F*ck",
       "author": "Mark Manson",
       "category": "Self-help",
       "status": "free",
-      "image": "./assets/img/books/10.jpg"
+      "image": "./src/assets/img/books/10.jpg"
+    },
+    {
+      "title": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "category": "Fiction",
+      "status": "free",
+      "image": "./src/assets/img/books/11.jpg"
+    },
+    {
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "category": "Fiction",
+      "status": "free",
+      "image": "./src/assets/img/books/12.jpg"
+    },
+    {
+      "title": "1984",
+      "author": "George Orwell",
+      "category": "Fiction",
+      "status": "premium",
+      "image": "./src/assets/img/books/13.jpg"
+    },
+    {
+      "title": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "category": "Fiction",
+      "status": "free",
+      "image": "./src/assets/img/books/14.jpg"
+    },
+    {
+      "title": "Sapiens: A Brief History of Humankind",
+      "author": "Yuval Noah Harari",
+      "category": "Non-fiction",
+      "status": "free",
+      "image": "./src/assets/img/books/15.jpg"
+    },
+    {
+      "title": "The Power of Now",
+      "author": "Eckhart Tolle",
+      "category": "Non-fiction",
+      "status": "premium",
+      "image": "./src/assets/img/books/16.jpg"
+    },
+    {
+      "title": "Thinking, Fast and Slow",
+      "author": "Daniel Kahneman",
+      "category": "Non-fiction",
+      "status": "free",
+      "image": "./src/assets/img/books/17.jpg"
+    },
+    {
+      "title": "The Lean Startup",
+      "author": "Eric Ries",
+      "category": "Business",
+      "status": "free",
+      "image": "./src/assets/img/books/18.jpg"
+    },
+    {
+      "title": "The Art of War",
+      "author": "Sun Tzu",
+      "category": "Business",
+      "status": "free",
+      "image": "./src/assets/img/books/19.jpg"
+    },
+    {
+      "title": "The Subtle Art of Not Giving a F*ck",
+      "author": "Mark Manson",
+      "category": "Self-help",
+      "status": "free",
+      "image": "./src/assets/img/books/20.jpg"
     }
   ]
 }

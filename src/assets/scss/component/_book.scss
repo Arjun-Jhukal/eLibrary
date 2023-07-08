@@ -1,0 +1,64 @@
+.book {
+  margin-bottom: 30px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  &__image {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.85);
+      transform: translateX(-100%);
+      @include transition(0.3s);
+    }
+  }
+  &__hover {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: $white;
+    text-align: center;
+    opacity: none;
+    visibility: hidden;
+    @include transition(0.1s);
+  }
+  &__status {
+    background-color: green;
+    padding: 5px 20px;
+    border-radius: 15px 0 15px 0;
+    color: $white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+  }
+  &__text {
+    margin-top: 15px;
+  }
+
+  &:hover {
+    .book__image {
+      &::before {
+        transform: translateX(0);
+      }
+    }
+    .book__hover {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .book__text {
+      h1.sm__heading {
+        color: $orange;
+      }
+    }
+  }
+}

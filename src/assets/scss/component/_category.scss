@@ -1,0 +1,45 @@
+.category {
+  &__nav {
+    button {
+      display: block;
+      width: 100%;
+      background-color: $lightOrange;
+      padding: 10px 20px;
+      position: relative;
+      z-index: 1;
+      font-size: 24px;
+      color: $white;
+      font-weight: 600;
+      text-align: left;
+      border-radius: 5px 5px 0 0;
+      &::after {
+        content: "\f107";
+        font-family: "fontAwesome";
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+      }
+    }
+    ul {
+      border: 1px solid #ddd;
+
+      li {
+        cursor: pointer;
+        padding: 15px 20px;
+        &:not(:last-child) {
+          border-bottom: 1px solid #ddd;
+        }
+
+        &.active {
+          background-color: $orange;
+          color: $white;
+        }
+        &:hover {
+          background-color: $orange;
+          color: $white;
+        }
+      }
+    }
+  }
+}
