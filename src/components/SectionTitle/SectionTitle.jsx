@@ -1,9 +1,8 @@
-import React from "react";
-
-const SectionTitle = () => {
+const SectionTitle = ({ title, subTitle }) => {
   return (
-    <div>
-      <p>Section Title</p>
+    <div className="section__title">
+      <h1 className="md__heading">{title}</h1>
+      <p>{subTitle}</p>
     </div>
   );
 };

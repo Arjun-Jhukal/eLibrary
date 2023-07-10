@@ -44,11 +44,16 @@ textarea {
   display: block;
   outline: none;
   padding: 10px 20px;
+  border: 1px solid #ddd;
+
+  &:focus {
+    border-color: $orange;
+  }
 }
 button {
   outline: none;
   border: none;
-  // background-color: transparent;
+  background-color: transparent;
 }
 img {
   width: 100%;

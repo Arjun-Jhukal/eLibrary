@@ -1,6 +1,23 @@
 .category {
+  height: 650px;
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    width: 3px;
+    background-color: #ddd;
+  }
+  &::-webkit-scrollbar-track {
+    width: 100%;
+    background-color: #ddd;
+  }
+  &::-webkit-scrollbar-thumb {
+    width: 100%;
+    background-color: $orange;
+  }
   &__nav {
-    button {
+    position: sticky;
+    top: 0;
+    > button {
       display: block;
       width: 100%;
       background-color: $lightOrange;
@@ -25,20 +42,54 @@
       border: 1px solid #ddd;
 
       li {
-        cursor: pointer;
-        padding: 15px 20px;
+        button {
+          cursor: pointer;
+          padding: 15px 20px;
+          display: block;
+          width: 100%;
+          text-align: left;
+          &.active {
+            background-color: $orange;
+            color: $white;
+          }
+          &:hover {
+            background-color: $orange;
+            color: $white;
+          }
+        }
         &:not(:last-child) {
-          border-bottom: 1px solid #ddd;
+          button {
+            border-bottom: 1px solid #ddd;
+          }
         }
+      }
+    }
+  }
+}
 
-        &.active {
-          background-color: $orange;
-          color: $white;
-        }
-        &:hover {
-          background-color: $orange;
-          color: $white;
-        }
+@media (max-width: 992px) {
+  .category {
+    height: auto;
+    position: relative;
+    z-index: 1;
+
+    &__nav {
+      position: relative;
+      z-index: 2;
+      margin-bottom: 30px;
+
+      button {
+        border-radius: 10px;
+      }
+
+      ul {
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: $white;
+        width: 100%;
+        opacity: 0;
+        visibility: hidden;
       }
     }
   }

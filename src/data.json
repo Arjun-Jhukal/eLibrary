@@ -1,5 +1,23 @@
 {
-  "category": ["Friction", "Non-Friction", "Business", "Self-help", "Biography", "Academic", "Poetry", "Philosophy", "Crime"],
+  "menuItem": [
+    {
+      "item": "Home",
+      "link": "/"
+    },
+    {
+      "item": "About Us",
+      "link": "/about"
+    },
+    {
+      "item": "Books",
+      "link": "#"
+    },
+    {
+      "item": "Contact Us",
+      "link": "/contact"
+    }
+  ],
+  "category": ["Fiction", "Non-Fiction", "Drama", "Business", "Self-help", "Biography", "Academic", "Poetry", "Philosophy", "Crime"],
   "books": [
     {
       "title": "The Great Gatsby",
@@ -140,6 +158,42 @@
       "category": "Self-help",
       "status": "free",
       "image": "./src/assets/img/books/20.jpg"
+    }
+  ],
+  "plans": [
+    {
+      "title": "Single",
+      "brief": "Get Access to a Premium Book of Your Choice",
+      "list": ["1 Book", "Until 1 Month", "Seat Booked in Library Hall", "Free access to Library "],
+      "price": "199.99",
+      "actualPrice": "299",
+      "duration": "Mo"
+    },
+    {
+      "title": "Premium",
+      "brief": "Get Access to All Premium Book Available",
+      "list": ["All Books", "Until 1 Year", "Cabin Booked for the individual", "Free access to Library "],
+      "price": "1399.99",
+      "actualPrice": "1999.99",
+      "duration": "Yrs"
+    }
+  ],
+  "services": [
+    {
+      "title": "Audio Books",
+      "brief": "Enjoy audio book online"
+    },
+    {
+      "title": "Book Takeaway",
+      "brief": "Borrow a book and takeaway"
+    },
+    {
+      "title": "Online Book",
+      "brief": "Enjoy reading book online"
+    },
+    {
+      "title": "Reading Room",
+      "brief": "Book Your seat in advanced"
     }
   ]
 }

@@ -1,0 +1,73 @@
+.cta {
+  position: relative;
+  z-index: 1;
+  color: $white;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 400px;
+
+  &::before {
+    content: "";
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+  }
+
+  &__content {
+    h1.lg__heading {
+      text-transform: capitalize;
+
+      &::after {
+        content: "";
+        display: block;
+        width: 5%;
+        height: 5px;
+        background-color: $white;
+        margin: 0 auto;
+        margin-top: 10px;
+      }
+    }
+    p {
+      margin-bottom: 30px;
+    }
+  }
+}
+.donation {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 200px;
+  display: grid;
+  place-items: center;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    span,
+    h1 {
+      color: $white;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .donation {
+    &__content {
+      text-align: center;
+      justify-content: center;
+    }
+  }
+}

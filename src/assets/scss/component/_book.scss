@@ -26,7 +26,7 @@
     transform: translateY(-50%);
     color: $white;
     text-align: center;
-    opacity: none;
+    opacity: 0;
     visibility: hidden;
     @include transition(0.1s);
   }

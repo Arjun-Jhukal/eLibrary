@@ -1,0 +1,26 @@
+.service {
+  margin-top: 80px;
+  background: linear-gradient(to right, $orange, $orange);
+  padding: 80px 0;
+
+  h1,
+  p {
+    color: $white;
+  }
+
+  &__item {
+    text-align: center;
+    .icon {
+      width: 120px;
+      height: 120px;
+      background-color: $lightOrange;
+      border-radius: 50%;
+      margin-bottom: 15px;
+      display: grid;
+      place-items: center;
+      color: $white;
+      margin: 0 auto 30px;
+      font-size: 60px;
+    }
+  }
+}

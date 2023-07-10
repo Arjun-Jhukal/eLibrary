@@ -8,18 +8,28 @@
   font-size: $sm_font;
 }
 
+.section__title {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section__gap {
+  padding: 80px 0;
+}
+
 .btn {
   padding: 10px 20px;
   font-size: 1.6rem;
-  border-radius: 2px;
-  color: $white !important;
   position: relative;
   z-index: 1;
+  @include transition(0.3s);
 
   &__free,
   &__paid {
     background-color: $lightOrange;
     overflow: hidden;
+    color: $white !important;
+    border-radius: 2px;
 
     &::before {
       content: "";
@@ -37,5 +47,70 @@
         width: 100%;
       }
     }
+  }
+  &__buy {
+    border: 1px solid $orange;
+    color: $lightOrange;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 10px 30px;
+    border-radius: 2px;
+
+    &:hover {
+      background-color: $orange;
+      color: $white;
+    }
+  }
+  &__donate {
+    padding: 15px 30px;
+    background-color: $white;
+    color: $orange;
+    border-radius: 20px;
+    position: relative;
+    z-index: 1;
+
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border: 1px solid $white;
+      z-index: -1;
+      border-radius: 20px;
+    }
+    &::after {
+      animation: zoomIn 1.5s linear 0.5s infinite;
+    }
+    &::before {
+      animation: zoomIn 1.5s linear infinite;
+    }
+
+    &:hover {
+      background-color: $orange;
+      color: $white;
+      &::before,
+      &::after {
+        border-color: $orange;
+        animation-duration: 0.5s;
+      }
+    }
+  }
+  &__search {
+    background-color: $orange;
+    margin-bottom: 0;
+    border-radius: 0 5px 5px 0;
+    color: $white;
+    &:hover {
+      background-color: $lightOrange;
+    }
+  }
+}
+.price {
+  &::before {
+    content: "Rs.";
+    display: inline-block;
   }
 }
